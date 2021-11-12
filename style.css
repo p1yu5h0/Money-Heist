@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: radial-gradient(rgb(24 23 29), rgb(21 13 14));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.daliMask{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+}
+
+.mask{
+    position: absolute;
+    width: 40em;
+}
+

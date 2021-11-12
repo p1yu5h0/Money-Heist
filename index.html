@@ -1,25 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
-    <title>Money Heist</title>
-</head>
-<body>
-    <div class="daliMask">
-        <img src="Svgs/Mask.svg" alt="" class="mask">
-        <div class="mask_eyeball left">
-            <div class="mask_eye">
-                
-            </div>
-        </div>
-        <div class="mask_eyeball right">
-            <div class="mask_eye">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Money Hiest</title>
+    <script>
+        let mask_eye = document.getElementsByClassName("mask_eye");
+        document.onmousemove = function () {
+          let x = (event.clientX * 100) / window.innerWidth + "%";
+  
+          let y = (event.clientY * 100) / window.innerHeight + "%";
+  
+          for (let i = 0; i < 2; i++) {
+            mask_eye[i].style.left = x;
+            mask_eye[i].style.top = y;
+            mask_eye[i].style.transform = `translate(-${x},-${y})`;
+          }
+        };
+      </script>
+  </head>
 
-            </div>
-        </div>
+  <body>
+    <div id="DaliMask">
+      <img id="mask" src="Svgs/Mask.svg" />
+
+      <div class="mask_eye_ball left">
+        <div class="mask_eye"></div>
+      </div>
+      <div class="mask_eye_ball right">
+        <div class="mask_eye"></div>
+      </div>
     </div>
-</body>
+  </body>
 </html>

@@ -1,28 +1,52 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding-top: 0px;
+  box-sizing: border-box;
 }
 
-body{
-    background-image: radial-gradient(rgb(24 23 29), rgb(21 13 14));
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
+body {
+  background-image: radial-gradient(circle 1000px, #e9e171, #eb4259);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position-x: center;
+}
+#DaliMask {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+#mask {
+  position: absolute;
+  width: 40em;
 }
 
-.daliMask{
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-
+.mask_eye_ball {
+  position: relative;
+  border: none;
+  width: 1.7em;
+  height: 1.3em;
+  border-radius: 50%;
+  font-size: 3em;
+}
+.left {
+  top: -45px;
+  left: -20px;
 }
 
-.mask{
-    position: absolute;
-    width: 40em;
+.right {
+  top: -44px;
+  left: 21px;
 }
 
+.mask_eye {
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  border-radius: 50%;
+  transform: translate(50%, 50%);
+  background-color: black;
+}
